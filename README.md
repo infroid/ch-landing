@@ -1,1 +1,2 @@
-# ch-landing
+# ContextHub Landing Page
+
