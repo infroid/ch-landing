@@ -8,12 +8,12 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="ContextHub — One context. Every agent.">
-  <meta property="og:description" content="One graph for your repo. One context for your team. Every coding agent gets the file it expects, generated from the same source.">
+  <meta property="og:description" content="One shared context for your whole team. Every coding agent gets the rules file it expects, always up to date — generated from a single source.">
   <meta property="og:url" content="https://contexthub.one">
 
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="ContextHub — One context. Every agent.">
-  <meta name="twitter:description" content="One graph for your repo. One context for your team. Every coding agent gets the file it expects, generated from the same source.">
+  <meta name="twitter:description" content="One shared context for your whole team. Every coding agent gets the rules file it expects, always up to date — generated from a single source.">
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230B0D10'/><text x='50%25' y='56%25' text-anchor='middle' dominant-baseline='central' fill='%23B8FF5C' font-family='ui-monospace,monospace' font-weight='700' font-size='13' letter-spacing='-1'>[ch]</text></svg>">
 
@@ -88,13 +88,13 @@
 
       <div class="hero-terminal reveal" aria-hidden="true">
         <div class="term-chrome">
-          <span class="d r"></span><span class="d y"></span><span class="d g"></span>
+          <span class="traffic-dot red"></span><span class="traffic-dot yellow"></span><span class="traffic-dot green"></span>
           <span class="term-chrome-title">ch — ~/work/cooking-assistant</span>
         </div>
         <div class="term-body">
           <div><span class="p">$</span> ch sync</div>
           <div class="dim">↑ graph · ↓ Claude files</div>
-          <div class="ok">✓ Synced 3 files (320ms)</div>
+          <div class="ok">✓ Synced 3 files (2.1s)</div>
           <div class="dim">  CLAUDE.md</div>
           <div class="dim">  .claude/commands/refresh-context.md</div>
           <div class="dim">  .claude/skills/context-hub/SKILL.md</div>
@@ -114,7 +114,6 @@
       </div>
       <div class="reveal">
         <p class="pullquote"><span class="pullquote-mark">"</span>The space between what a team knows and what an agent knows is where every project fails.<span class="pullquote-mark">"</span></p>
-        <p class="pullquote-caption">— observed, everywhere</p>
         <ul class="tool-list" aria-label="Where context dies">
           <li class="tool-row"><span class="name">Wiki page</span><span class="fate"><span class="x">×</span> Never reaches the agent</span></li>
           <li class="tool-row"><span class="name">Chat thread</span><span class="fate"><span class="x">×</span> Lost after 14d</span></li>
@@ -130,8 +129,8 @@
   <section class="section" id="how-it-works">
     <div class="reveal section-head">
       <div class="section-label"><span class="dot"></span> How it works</div>
-      <h2 class="section-title">Repo to agent-ready,<br>in four steps</h2>
-      <p class="section-desc">Connect once. The graph maintains itself. The CLI ships it.</p>
+      <h2 class="section-title">From repo to every agent.<br>Your team in the loop.</h2>
+      <p class="section-desc">Connect once. AI flags the gaps, your team fills them in, the CLI ships the result.</p>
     </div>
 
     <div class="steps">
@@ -194,9 +193,9 @@
     <div class="mock-frame reveal" id="mock-cli">
       <div class="terminal" role="img" aria-label="Animated terminal showing ch init, ch sync, and ch agent commands generating per-agent context files">
         <div class="terminal-header" aria-hidden="true">
-          <span class="terminal-dot red"></span>
-          <span class="terminal-dot yellow"></span>
-          <span class="terminal-dot green"></span>
+          <span class="traffic-dot red"></span>
+          <span class="traffic-dot yellow"></span>
+          <span class="traffic-dot green"></span>
           <span class="terminal-title">ch — ~/work/cooking-assistant</span>
         </div>
         <div class="terminal-body" id="terminal-body" aria-hidden="true"></div>
@@ -222,9 +221,9 @@
     <div class="mock-frame reveal" id="mock-web">
       <div class="docapp" role="img" aria-label="Animated web editor showing collaborative editing and an AI confidence-gated question on a graph node">
         <div class="docapp-chrome" aria-hidden="true">
-          <span class="docapp-dot red"></span>
-          <span class="docapp-dot yellow"></span>
-          <span class="docapp-dot green"></span>
+          <span class="traffic-dot red"></span>
+          <span class="traffic-dot yellow"></span>
+          <span class="traffic-dot green"></span>
           <span class="docapp-url">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
             <span class="docapp-url-text">contexthub.one/c/cooking-assistant/product.md</span>
@@ -530,7 +529,7 @@
           <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Markdown + PDF + all agent formats</li>
           <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Hosted ContextHub AI (no key needed)</li>
         </ul>
-        <a href="#auth" class="btn btn-primary btn-full" data-auth-trigger>Start Pro trial</a>
+        <a href="#auth" class="btn btn-primary btn-full" data-auth-trigger>Start free</a>
       </div>
 
       <div class="pricing-card">
@@ -543,7 +542,7 @@
           <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Private deployment (VPC)</li>
           <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Priority support + onboarding</li>
         </ul>
-        <a href="#auth" class="btn btn-ghost btn-full" data-auth-trigger>Talk to us</a>
+        <a href="#auth" class="btn btn-ghost btn-full" data-auth-trigger>Start free</a>
       </div>
     </div>
   </section>
@@ -556,27 +555,27 @@
       <h2 class="section-title">Common Questions</h2>
     </div>
     <div class="faq-list reveal">
-      <details open>
+      <details>
         <summary>Why not just commit a rules file to git?</summary>
         <p>You can. Then you do it again for the next agent. Then you forget which one's stale. The graph is the single source — every agent's file falls out of it.</p>
       </details>
-      <details open>
+      <details>
         <summary>Which agents are supported?</summary>
         <p>Every coding agent that takes a rules or context file. Adding a new one is a config PR — one YAML per agent — not a release.</p>
       </details>
-      <details open>
+      <details>
         <summary>Does my code leave my machine?</summary>
         <p>No. The graph builds locally. Only the graph uploads. Self-host the editor on Team if even that is too much.</p>
       </details>
-      <details open>
+      <details>
         <summary>How is this different from a wiki?</summary>
         <p>Wikis are for humans. ContextHub is a graph with confidence scores, targeted questions, and per-agent emit. A wiki doesn't update an agent's rules when you swap agents.</p>
       </details>
-      <details open>
+      <details>
         <summary>Do you train on my data?</summary>
         <p>No. Your graph is yours. Bring your own LLM key on Free and Pro and prompts never touch our infra.</p>
       </details>
-      <details open>
+      <details>
         <summary>What happens if I cancel?</summary>
         <p>One command exports everything. The CLI keeps working offline against your local graph.</p>
       </details>
@@ -589,10 +588,9 @@
     <div class="cta-box reveal">
       <h2>Start shaping context.</h2>
       <p class="section-desc">Free for solo. No card. No lock-in.</p>
-      <form class="cta-form" id="cta-form" novalidate>
-        <input type="email" name="email" placeholder="you@yourdomain.com" required aria-label="Work email">
-        <button type="submit" class="btn btn-primary">Start free</button>
-      </form>
+      <a href="#auth" class="btn btn-primary btn-lg cta-btn" data-auth-trigger>
+        Start free <span class="arrow" aria-hidden="true">→</span>
+      </a>
     </div>
   </section>
 
@@ -600,7 +598,10 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <span class="footer-brand">ContextHub</span>
+      <span class="footer-brand">
+        <span class="logo-mark">ch</span>
+        <span>ContextHub</span>
+      </span>
       <span class="footer-copy">© 2026 · contexthub.one</span>
     </div>
   </footer>
