@@ -94,7 +94,7 @@
       if (!target) return;
       e.preventDefault();
       setMenu(false);
-      window.scrollTo({ top: target.offsetTop - 72, behavior: 'smooth' });
+      window.scrollTo({ top: target.offsetTop - 56, behavior: 'smooth' });
     });
   });
 
@@ -380,14 +380,5 @@
     };
 
     gateOnVisible(termMock, runSequence);
-  }
-
-  // CTA email form — preview-only handler until the signup endpoint exists
-  const ctaForm = document.getElementById('cta-form');
-  if (ctaForm) {
-    ctaForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      openAuth();
-    });
   }
 })();
